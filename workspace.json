@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "core-app": "apps/core-app",
-    "core-app-e2e": "apps/core-app-e2e"
+    "core-app-e2e": "apps/core-app-e2e",
+    "shared-components": "libs/shared-components"
   }
 }
