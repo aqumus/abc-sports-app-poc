@@ -17,6 +17,9 @@
     "paths": {
       "@abc/fixtures-widget": ["libs/fixtures-widget/src/index.ts"],
       "@abc/leaderboard-widget": ["libs/leaderboard-widget/src/index.ts"],
+      "@abc/match-highlights-widget": [
+        "libs/match-highlights-widget/src/index.ts"
+      ],
       "@abc/shared-components": ["libs/shared-components/src/index.ts"]
     }
   },

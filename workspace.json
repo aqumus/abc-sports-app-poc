@@ -6,6 +6,7 @@
     "core-app-e2e": "apps/core-app-e2e",
     "fixtures-widget": "libs/fixtures-widget",
     "leaderboard-widget": "libs/leaderboard-widget",
+    "match-highlights-widget": "libs/match-highlights-widget",
     "shared-components": "libs/shared-components"
   }
 }
