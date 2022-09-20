@@ -4,6 +4,7 @@
   "projects": {
     "core-app": "apps/core-app",
     "core-app-e2e": "apps/core-app-e2e",
+    "fixtures-widget": "libs/fixtures-widget",
     "leaderboard-widget": "libs/leaderboard-widget",
     "shared-components": "libs/shared-components"
   }
