@@ -1,4 +1,6 @@
-import styles from './index.module.css';
+import { FixturesWidget } from '@abc/fixtures-widget';
+import { LeaderboardWidget } from '@abc/leaderboard-widget';
+import { MatchHighlightsWidget } from '@abc/match-highlights-widget';
 
 export function Index() {
   /*
@@ -6,7 +8,13 @@ export function Index() {
    *
    * Note: The corresponding styles are in the ./index.css file.
    */
-  return <div className="bg-indigo-500 p-2 font-mono">Hello!</div>;
+  return (
+    <div className="bg-yellow-500 dark:bg-red-500">
+      <FixturesWidget />
+      <LeaderboardWidget />
+      <MatchHighlightsWidget />
+    </div>
+  );
 }
 
 export default Index;

@@ -1,11 +1,9 @@
-import styles from './match-highlights-widget.module.css';
-
 /* eslint-disable-next-line */
 export interface MatchHighlightsWidgetProps {}
 
 export function MatchHighlightsWidget(props: MatchHighlightsWidgetProps) {
   return (
-    <div className={styles['container']}>
+    <div className="bg-green-500 p-2 font-mono">
       <h1>Welcome to MatchHighlightsWidget!</h1>
     </div>
   );
