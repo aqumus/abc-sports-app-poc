@@ -20,6 +20,7 @@
       "@abc/match-highlights-widget": [
         "libs/match-highlights-widget/src/index.ts"
       ],
+      "@abc/match-service": ["libs/match-service/src/index.ts"],
       "@abc/shared-components": ["libs/shared-components/src/index.ts"]
     }
   },
