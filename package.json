@@ -9,7 +9,9 @@
   },
   "private": true,
   "dependencies": {
+    "@headlessui/react": "^1.7.2",
     "@nrwl/next": "14.7.5",
+    "@tanstack/react-query": "^4.5.0",
     "core-js": "^3.6.5",
     "next": "12.2.5",
     "react": "18.2.0",

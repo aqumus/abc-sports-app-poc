@@ -1112,6 +1112,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@headlessui/react@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@headlessui/react/-/react-1.7.2.tgz#e6a6a8d38342064a53182f1eb2bf6d9c1e53ba6a"
+  integrity sha512-snLv2lxwsf2HNTOBNgHYdvoYZ3ChJE8QszPi1d/hl9js8KrFrUulTaQBfSyPbJP5BybVreWh9DxCgz9S0Z6hKQ==
+
 "@humanwhocodes/config-array@^0.9.2":
   version "0.9.5"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.9.5.tgz#2cbaf9a89460da24b5ca6531b8bbfc23e1df50c7"
@@ -2068,6 +2073,19 @@
   integrity sha512-6JrF+fdUK2zbGpJIlN7G3v966PQjyx/dPt1T9km2wj+EUBqgrxCk3uX4Kct16MIm9gGxfKRcfax2hVf5jvlTzA==
   dependencies:
     tslib "^2.4.0"
+
+"@tanstack/query-core@4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.5.0.tgz#eeb0f290adb34f8682f65ebfce4e74709f3ae130"
+  integrity sha512-9pHE4TNlnBxdF24bTH3GGAJ4JdIDfJyuE/q+snyV425XEimPDe+OfofM8mVHfrn01Spvk9xAMpbqoEcmQG4kMg==
+
+"@tanstack/react-query@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.5.0.tgz#566fbf4286a075d74cce32859ecfaafd11cb2d89"
+  integrity sha512-58JRis0+1hdKe37L7ZAJex849mlqhBvpNwlOjz6KzEMXHH/b0AyUHp1YIqn6ULiw7YpZiheYpCkdB/7ArIgfrg==
+  dependencies:
+    "@tanstack/query-core" "4.5.0"
+    use-sync-external-store "^1.2.0"
 
 "@testing-library/dom@^8.5.0":
   version "8.17.1"
@@ -9267,7 +9285,7 @@ url-parse@^1.5.3:
     querystringify "^2.1.1"
     requires-port "^1.0.0"
 
-use-sync-external-store@1.2.0:
+use-sync-external-store@1.2.0, use-sync-external-store@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/use-sync-external-store/-/use-sync-external-store-1.2.0.tgz#7dbefd6ef3fe4e767a0cf5d7287aacfb5846928a"
   integrity sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==
