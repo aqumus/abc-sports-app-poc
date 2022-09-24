@@ -21,7 +21,8 @@
         "libs/match-highlights-widget/src/index.ts"
       ],
       "@abc/match-service": ["libs/match-service/src/index.ts"],
-      "@abc/shared-components": ["libs/shared-components/src/index.ts"]
+      "@abc/shared-components": ["libs/shared-components/src/index.ts"],
+      "@abc/shared-model": ["libs/shared-model/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

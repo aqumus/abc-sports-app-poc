@@ -1,4 +1,4 @@
-import { Fixture, MatchDetails } from '../match-service-types';
+import { Fixture, MatchDetails } from '@abc/shared-model';
 import { mockMatches } from './matches';
 
 export const mockFixtures: Fixture[] = [

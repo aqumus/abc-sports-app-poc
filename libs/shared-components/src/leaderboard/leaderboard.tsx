@@ -1,14 +1,45 @@
-import styles from './leaderboard.module.css';
+import { MatchParticipant } from '@abc/shared-model';
+import Image from 'next/image';
 
 /* eslint-disable-next-line */
-export interface LeaderboardProps {}
+export interface LeaderboardProps {
+  participants: MatchParticipant[];
+}
 
-export function Leaderboard(props: LeaderboardProps) {
+function LeaderBoardItem({
+  driverImageUrl,
+  driverName,
+  team,
+  position,
+  brandIconUrl,
+  manufacturer,
+}: MatchParticipant) {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Leaderboard!</h1>
-    </div>
+    <li>
+      <span>#{position}</span>
+      <div>
+        <Image
+          src={driverImageUrl}
+          width={75}
+          height={75}
+          alt={`${driverName} image`}
+        ></Image>
+        <span>{driverName}</span>
+      </div>
+      <div>
+        <span>{team}</span>
+        <Image src={brandIconUrl} alt={manufacturer} title={manufacturer} />
+      </div>
+    </li>
   );
 }
 
-export default Leaderboard;
+export function Leaderboard({ participants }: LeaderboardProps) {
+  return (
+    <div className="">
+      {participants.map((participant) => (
+        <LeaderBoardItem {...participant} />
+      ))}
+    </div>
+  );
+}

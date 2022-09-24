@@ -1,4 +1,4 @@
-import { MatchHighlight } from '../match-service-types';
+import { MatchHighlight } from '@abc/shared-model';
 
 export const mockMatchHighlights: MatchHighlight[] = [
   {

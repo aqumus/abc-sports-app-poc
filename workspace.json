@@ -8,6 +8,7 @@
     "leaderboard-widget": "libs/leaderboard-widget",
     "match-highlights-widget": "libs/match-highlights-widget",
     "match-service": "libs/match-service",
-    "shared-components": "libs/shared-components"
+    "shared-components": "libs/shared-components",
+    "shared-model": "libs/shared-model"
   }
 }

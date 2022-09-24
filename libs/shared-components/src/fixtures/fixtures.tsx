@@ -1,14 +1,35 @@
+import { Fixture } from '@abc/shared-model';
 import styles from './fixtures.module.css';
 
 /* eslint-disable-next-line */
-export interface FixturesProps {}
+export interface FixturesProps {
+  fixtures: Fixture[];
+}
 
-export function Fixtures(props: FixturesProps) {
+function FixtureComponent({
+  season,
+  championship,
+  match: { totalLaps, trackLength, trackName, location },
+}: Fixture) {
   return (
-    <div className={styles['container']}>
-      <h1>Welcome to Fixtures!</h1>
+    <div>
+      <span>Season: {season}</span>
+      <span>Championship: {championship}</span>
+      <hr></hr>
+      <div>{trackName}</div>
+      <div>
+        {location} - {totalLaps}/{trackLength}
+      </div>
     </div>
   );
 }
 
-export default Fixtures;
+export function Fixtures({ fixtures }: FixturesProps) {
+  return (
+    <div className="">
+      {fixtures.map((fixture) => (
+        <FixtureComponent {...fixture} />
+      ))}
+    </div>
+  );
+}

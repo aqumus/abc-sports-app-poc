@@ -4,7 +4,7 @@ import MatchHighlights from './match-highlights';
 
 describe('MatchHighlights', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<MatchHighlights />);
+    const { baseElement } = render(<MatchHighlights highlights={[]} />);
     expect(baseElement).toBeTruthy();
   });
 });
