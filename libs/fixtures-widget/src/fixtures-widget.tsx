@@ -1,6 +1,5 @@
 import { Fixtures, Loader } from '@abc/shared-components';
 import { useFixtures } from '@abc/shared-hooks';
-import { Fixture } from '@abc/shared-model';
 
 /* eslint-disable-next-line */
 export interface FixturesWidgetProps {}
