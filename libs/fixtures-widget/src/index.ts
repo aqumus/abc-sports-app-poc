@@ -1,1 +1,1 @@
-export * from './lib/fixtures-widget';
+export * from './fixtures-widget';

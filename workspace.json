@@ -9,6 +9,7 @@
     "match-highlights-widget": "libs/match-highlights-widget",
     "match-service": "libs/match-service",
     "shared-components": "libs/shared-components",
+    "shared-hooks": "libs/shared-hooks",
     "shared-model": "libs/shared-model"
   }
 }

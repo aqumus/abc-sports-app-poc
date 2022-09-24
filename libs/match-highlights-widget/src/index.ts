@@ -1,1 +1,1 @@
-export * from './lib/match-highlights-widget';
+export * from './match-highlights-widget';

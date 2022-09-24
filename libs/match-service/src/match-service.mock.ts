@@ -32,10 +32,8 @@ async function getLeaderBoardEntries(matchId: string) {
   };
 }
 
-export function mockMatchService(): MatchService {
-  return {
-    getMatchHighlights,
-    getFixtures,
-    getLeaderBoardEntries,
-  };
-}
+export const mockMatchService = {
+  getMatchHighlights,
+  getFixtures,
+  getLeaderBoardEntries,
+};

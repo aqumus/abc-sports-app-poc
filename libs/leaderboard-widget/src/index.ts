@@ -1,1 +1,1 @@
-export * from './lib/leaderboard-widget';
+export * from './leaderboard-widget';

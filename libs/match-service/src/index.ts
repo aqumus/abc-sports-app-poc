@@ -1,2 +1,2 @@
-export * from './lib/match-service';
-export * from './lib/match-service-types';
+export * from './match-service';
+export * from './match-service-types';

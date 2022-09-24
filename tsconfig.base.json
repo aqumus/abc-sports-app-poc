@@ -22,6 +22,7 @@
       ],
       "@abc/match-service": ["libs/match-service/src/index.ts"],
       "@abc/shared-components": ["libs/shared-components/src/index.ts"],
+      "@abc/shared-hooks": ["libs/shared-hooks/src/index.ts"],
       "@abc/shared-model": ["libs/shared-model/src/index.ts"]
     }
   },
