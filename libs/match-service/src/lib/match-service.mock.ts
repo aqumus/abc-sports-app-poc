@@ -1,7 +1,7 @@
-import { MatchService } from './match-service-types';
+import { MatchHighlightParam, MatchService } from './match-service-types';
 import { mockFixtures, mockMatches, mockMatchHighlights } from './mocks';
 
-async function getMatchHighlights(highlightParam) {
+async function getMatchHighlights(highlightParam: MatchHighlightParam) {
   return {
     next: '',
     prev: '',
