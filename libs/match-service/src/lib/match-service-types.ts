@@ -1,7 +1,6 @@
 import { Fixture, MatchHighlight, MatchParticipant } from '@abc/shared-model';
 
 export type MatchHighlightParam = {
-  since: Date;
   screenWidth: number;
   screenHeight: number;
 };
