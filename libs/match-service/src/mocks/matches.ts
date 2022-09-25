@@ -48,13 +48,19 @@ export const matchParticipants: MatchParticipant[] = [
 ];
 
 function randomParticipants(matchId: string) {
-  return matchParticipants.map((participant, index) => {
-    return {
-      ...participant,
-      matchId,
-      position: Math.floor(Math.random() * (matchParticipants.length - index)),
-    };
-  });
+  return matchParticipants
+    .map((participant) => {
+      return {
+        ...participant,
+        matchId,
+        sortNum: Math.random(),
+      };
+    })
+    .sort((a, b) => a.sortNum - b.sortNum)
+    .map(({ sortNum, ...participantProp }, index) => ({
+      ...participantProp,
+      position: index + 1,
+    }));
 }
 
 export const mockMatches: MatchDetails[] = [
