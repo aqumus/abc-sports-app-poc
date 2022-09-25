@@ -12,9 +12,14 @@ export function MatchHighlightsWidget(props: MatchHighlightsWidgetProps) {
       : INITIAL_MATCH_HIGHLIGHT_PARAM
   );
   return (
-    <div id="match-highlight-widget" className="bg-green-500 p-2 font-mono">
+    <>
+      <h1 id="match-highlight-widget" className="font-bold text-lg mb-4 mt-12">
+        <a href="#match-highlight-widget" className="cursor-pointer">
+          Match Highlights
+        </a>
+      </h1>
       {isLoading ? <Loader /> : <MatchHighlights highlights={data.results} />}
-    </div>
+    </>
   );
 }
 

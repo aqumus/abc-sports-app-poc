@@ -7,12 +7,14 @@ export interface FixturesWidgetProps {}
 export function FixturesWidget(props: FixturesWidgetProps) {
   const { data, isLoading } = useFixtures();
   return (
-    <div
-      id="fixtures-widget"
-      className="bg-blue-500 p-2 font-mono hover:bg-purple-200"
-    >
+    <>
+      <h1 id="fixtures-widget" className="font-bold text-lg mb-4">
+        <a href="#fixtures-widget" className="cursor-pointer">
+          Match Fixtures
+        </a>
+      </h1>
       {isLoading ? <Loader /> : <Fixtures fixtures={data?.results} />}
-    </div>
+    </>
   );
 }
 

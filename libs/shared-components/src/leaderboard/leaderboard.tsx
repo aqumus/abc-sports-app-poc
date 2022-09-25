@@ -15,34 +15,35 @@ function LeaderBoardItem({
   manufacturer,
 }: MatchParticipant) {
   return (
-    <li>
-      <span>#{position}</span>
-      <div>
-        <Image
-          src={driverImageUrl}
-          width={75}
-          height={75}
-          alt={`${driverName} image`}
-        ></Image>
-        <span>{driverName}</span>
+    <li className="flex relative items-center border-b-2 last:border-b-0 dark:border-slate-500 px-4 md:pr-8 py-4">
+      <span className="top-0 left-0 text-4xl mr-6">#{position}</span>
+      <Image
+        className="rounded-full"
+        src={driverImageUrl}
+        width={70}
+        height={70}
+        layout="fixed"
+        alt={`${driverName} image`}
+      ></Image>
+      <div className="grow ml-4">
+        <h3 className="grow text-lg">{driverName}</h3>
+        <span className="dark:text-slate-400">{team}</span>
       </div>
-      <div>
-        <span>{team}</span>
-        <Image
-          src={brandIconUrl}
-          alt={manufacturer}
-          title={manufacturer}
-          width={30}
-          height={40}
-        />
-      </div>
+      <Image
+        src={brandIconUrl}
+        alt={manufacturer}
+        title={manufacturer}
+        width={50}
+        height={50}
+        layout="fixed"
+      />
     </li>
   );
 }
 
 export function Leaderboard({ participants }: LeaderboardProps) {
   return (
-    <div className="">
+    <ul className="bg-slate-800 mb-8">
       {participants.map(({ matchId, position, driverName, ...otherProps }) => (
         <LeaderBoardItem
           key={matchId + position + driverName}
@@ -52,6 +53,6 @@ export function Leaderboard({ participants }: LeaderboardProps) {
           {...otherProps}
         />
       ))}
-    </div>
+    </ul>
   );
 }

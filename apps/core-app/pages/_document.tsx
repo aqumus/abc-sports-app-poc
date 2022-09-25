@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html>
       <Head />
-      <body>
+      <body className="h-screen">
         <Main />
         <NextScript />
         <Script id="theme-decider" strategy="beforeInteractive">

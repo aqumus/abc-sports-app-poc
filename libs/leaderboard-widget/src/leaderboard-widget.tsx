@@ -7,13 +7,14 @@ export interface LeaderboardWidgetProps {}
 export function LeaderboardWidget(props: LeaderboardWidgetProps) {
   const { data, isLoading } = useLeaderboardEntries('1');
   return (
-    <div
-      id="leaderboard-widget"
-      className="bg-orange-500 p-2 font-mono dark:bg-black"
-    >
+    <>
+      <h1 id="leaderboard-widget" className="font-bold text-lg mb-4">
+        <a href="#leaderboard-widget" className="cursor-pointer">
+          Leaderboard
+        </a>
+      </h1>
       {isLoading ? <Loader /> : <Leaderboard participants={data.results} />}
-      <h1>Welcome to LeaderboardWidget!</h1>
-    </div>
+    </>
   );
 }
 

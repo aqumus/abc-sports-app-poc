@@ -16,7 +16,7 @@ function CustomApp({ Component, pageProps }: AppProps) {
       <Head>
         <title>Welcome to core-app!</title>
       </Head>
-      <main className="app">
+      <main className="app bg-slate-200 dark:bg-slate-900 text-slate-900 dark:text-slate-100 h-full">
         <QueryClientProvider client={queryClient}>
           <Hydrate state={pageProps.dehydratedState}>
             <Component {...pageProps} />
