@@ -1,5 +1,4 @@
 import { MatchHighlight } from '@abc/shared-model';
-import Image from 'next/image';
 import { useCallback, useState } from 'react';
 
 /* eslint-disable-next-line */
