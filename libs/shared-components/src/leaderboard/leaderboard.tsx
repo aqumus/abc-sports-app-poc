@@ -43,8 +43,14 @@ function LeaderBoardItem({
 export function Leaderboard({ participants }: LeaderboardProps) {
   return (
     <div className="">
-      {participants.map((participant) => (
-        <LeaderBoardItem {...participant} />
+      {participants.map(({ matchId, position, driverName, ...otherProps }) => (
+        <LeaderBoardItem
+          key={matchId + position + driverName}
+          matchId={matchId}
+          position={position}
+          driverName={driverName}
+          {...otherProps}
+        />
       ))}
     </div>
   );

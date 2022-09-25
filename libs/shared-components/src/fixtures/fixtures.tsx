@@ -27,7 +27,7 @@ export function Fixtures({ fixtures }: FixturesProps) {
   return (
     <div className="">
       {fixtures.map((fixture) => (
-        <FixtureComponent {...fixture} />
+        <FixtureComponent key={fixture.id} {...fixture} />
       ))}
     </div>
   );

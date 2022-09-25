@@ -22,7 +22,6 @@ function CustomApp({ Component, pageProps }: AppProps) {
             <Component {...pageProps} />
           </Hydrate>
         </QueryClientProvider>
-        <Component {...pageProps} />
       </main>
     </>
   );

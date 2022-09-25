@@ -10,7 +10,6 @@ export interface MatchHighlightsProps {
 function MatchHighlightComponent({
   title,
   description,
-  thumbnailImageUrl,
   videoUrl,
 }: MatchHighlight) {
   const [videoDetails, setVideoDetails] = useState({
@@ -28,7 +27,15 @@ function MatchHighlightComponent({
     return (
       <div>
         <button onClick={toggleVideo}>Close</button>
-        <video src={videoUrl}></video>
+        <iframe
+          width="560"
+          height="315"
+          src={videoUrl}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </div>
     );
   }
@@ -36,16 +43,8 @@ function MatchHighlightComponent({
   return (
     <div>
       <div>
-        <Image
-          src={thumbnailImageUrl}
-          width={150}
-          height={150}
-          alt={`${title} Video thumbnail`}
-        />
-        <div>
-          <h2>{title}</h2>
-          <span>{description}</span>
-        </div>
+        <h2>{title}</h2>
+        <span>{description}</span>
       </div>
       <button onClick={toggleVideo}>Watch Highlights</button>
     </div>
@@ -56,7 +55,7 @@ export function MatchHighlights({ highlights }: MatchHighlightsProps) {
   return (
     <div className="">
       {highlights.map((highlight) => (
-        <MatchHighlightComponent {...highlight} />
+        <MatchHighlightComponent key={highlight.id} {...highlight} />
       ))}
     </div>
   );
