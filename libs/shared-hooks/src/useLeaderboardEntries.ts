@@ -8,4 +8,5 @@ export const useLeaderboardEntries = (matchId: string) => {
     () => matchService().getLeaderBoardEntries(matchId),
     { initialData: INITIAL_PAGINATED_RES }
   );
+  // return { data: INITIAL_PAGINATED_RES, isLoading: false };
 };

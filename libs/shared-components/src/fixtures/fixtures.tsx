@@ -1,5 +1,4 @@
 import { Fixture } from '@abc/shared-model';
-import styles from './fixtures.module.css';
 
 /* eslint-disable-next-line */
 export interface FixturesProps {

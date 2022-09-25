@@ -28,7 +28,13 @@ function LeaderBoardItem({
       </div>
       <div>
         <span>{team}</span>
-        <Image src={brandIconUrl} alt={manufacturer} title={manufacturer} />
+        <Image
+          src={brandIconUrl}
+          alt={manufacturer}
+          title={manufacturer}
+          width={30}
+          height={40}
+        />
       </div>
     </li>
   );

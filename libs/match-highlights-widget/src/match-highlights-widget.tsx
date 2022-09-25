@@ -7,7 +7,7 @@ export interface MatchHighlightsWidgetProps {}
 
 export function MatchHighlightsWidget(props: MatchHighlightsWidgetProps) {
   const { data, isLoading } = useMatchHighlights(
-    window
+    typeof window !== 'undefined'
       ? { screenHeight: window.innerHeight, screenWidth: window.innerWidth }
       : INITIAL_MATCH_HIGHLIGHT_PARAM
   );
