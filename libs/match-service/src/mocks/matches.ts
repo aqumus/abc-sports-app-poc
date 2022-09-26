@@ -1,6 +1,6 @@
 import { MatchDetails, MatchParticipant } from '@abc/shared-model';
 
-export const matchParticipants: MatchParticipant[] = [
+export const mockMatchParticipants: MatchParticipant[] = [
   {
     id: 'participant-1',
     matchId: '1',
@@ -48,7 +48,7 @@ export const matchParticipants: MatchParticipant[] = [
 ];
 
 function randomParticipants(matchId: string) {
-  return matchParticipants
+  return mockMatchParticipants
     .map((participant) => {
       return {
         ...participant,

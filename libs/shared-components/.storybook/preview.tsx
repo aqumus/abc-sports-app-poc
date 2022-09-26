@@ -1,7 +1,19 @@
 import React from 'react';
 import './tailwind-imports.css';
 
-const withThemeProvider = (Story, context) => {
+/**
+ * Overwriting next/image component to render with "unoptimised" prop
+ * This helps us to avoid next.js image optimisation and render images as it is
+ * Reference: https://dev.to/jonasmerlin/how-to-use-the-next-js-image-component-in-storybook-1415
+ */
+import * as NextImage from 'next/image';
+const OriginalNextImage = NextImage.default;
+Object.defineProperty(NextImage, 'default', {
+  configurable: true,
+  value: (props: any) => <OriginalNextImage {...props} unoptimized />,
+});
+
+const withThemeProvider = (Story: any, context: any) => {
   return (
     <div
       id="custom-root"
