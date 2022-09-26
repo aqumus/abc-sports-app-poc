@@ -43,11 +43,11 @@ export async function getStaticProps() {
 
 export function Index() {
   return (
-    <div className="flex flex-col md:flex-row-reverse px-8">
-      <div className="md:basis-2/5 md:ml-8">
+    <div className="flex flex-col md:flex-row-reverse w-full">
+      <div className="flex flex-col md:basis-4/12 md:max-w-3xl md:pl-8">
         <LeaderboardWidget />
       </div>
-      <div className="flex flex-col grow md:w-9/12">
+      <div className="flex flex-col md:w-6/12 lg:w-8/12 grow">
         <FixturesWidget />
         <MatchHighlightsWidget />
       </div>

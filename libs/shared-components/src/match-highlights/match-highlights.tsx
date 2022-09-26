@@ -23,7 +23,7 @@ function MatchHighlightComponent({
   }, [videoDetails, displayed]);
 
   return (
-    <div className="bg-slate-100 dark:bg-slate-800 flex flex-col p-6 min-w-fit justify-between relative">
+    <div className="bg-slate-100 dark:bg-slate-800 flex flex-col grow p-6 min-w-fit justify-between relative">
       {displayed ? (
         <div>
           <button
