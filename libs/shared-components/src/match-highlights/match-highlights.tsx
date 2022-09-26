@@ -23,7 +23,7 @@ function MatchHighlightComponent({
   }, [videoDetails, displayed]);
 
   return (
-    <div className="bg-slate-800 flex flex-col p-6 min-w-40 justify-between relative">
+    <div className="bg-slate-100 dark:bg-slate-800 flex flex-col p-6 min-w-40 justify-between relative">
       {displayed ? (
         <div>
           <button
@@ -44,9 +44,14 @@ function MatchHighlightComponent({
       ) : (
         <>
           <h2 className="text-xl">{title}</h2>
-          <span className="text-slate-400 text-sm mt-4">{description}</span>
-          <button className="bg-slate-700 m-4 p-2 " onClick={toggleVideo}>
-            Watch Highlights
+          <span className="text-slate-500 dark:text-slate-400 text-sm mt-4">
+            {description}
+          </span>
+          <button
+            className="bg-slate-200 dark:bg-slate-700 hover:bg-slate-300 hover:dark:bg-slate-600 m-4 p-2"
+            onClick={toggleVideo}
+          >
+            Watch
           </button>
         </>
       )}
