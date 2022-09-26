@@ -11,7 +11,12 @@ const config: StorybookConfig = {
     '../src/**/*.stories.mdx',
     '../src/**/*.stories.@(js|jsx|ts|tsx)',
   ],
-  addons: [...(rootMain.addons || []), '@nrwl/react/plugins/storybook'],
+  addons: [
+    ...(rootMain.addons || []),
+    '@nrwl/react/plugins/storybook',
+    'storybook-tailwind-dark-mode',
+    '@storybook/addon-a11y',
+  ],
   webpackFinal: async (config, { configType }: Options) => {
     // apply any global webpack configs that might have been specified in .storybook/main.ts
     if (rootMain.webpackFinal) {
