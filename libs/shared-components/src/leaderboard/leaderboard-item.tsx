@@ -22,7 +22,7 @@ export function LeaderBoardItem({
       ></Image>
       <div className="grow ml-4">
         <h3 className="grow md:text-lg">{driverName}</h3>
-        <span className="text-slate-500 dark:text-slate-400 text-sm md:text-base">
+        <span className="text-slate-600 dark:text-slate-400 text-sm md:text-base">
           {team}
         </span>
       </div>

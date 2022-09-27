@@ -13,10 +13,10 @@ export function FixtureComponent({
         <span>{trackName}</span>
       </div>
       <div>
-        <div className="text-slate-500 dark:text-slate-400 mt-8">
+        <div className="text-slate-600 dark:text-slate-400 mt-8">
           {totalLaps} laps / {trackLength} miles
         </div>
-        <div className=" text-slate-500 dark:text-slate-400 mt-2">
+        <div className=" text-slate-600 dark:text-slate-400 mt-2">
           {location}
         </div>
       </div>
