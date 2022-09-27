@@ -13,11 +13,11 @@ export function MatchHighlightsWidget(props: MatchHighlightsWidgetProps) {
   );
   return (
     <>
-      <h1 id="match-highlight-widget" className="font-bold text-lg mb-4 mt-12">
+      <h2 id="match-highlight-widget" className="font-bold text-lg mb-4 mt-12">
         <a href="#match-highlight-widget" className="cursor-pointer">
           Match Highlights
         </a>
-      </h1>
+      </h2>
       {isLoading ? <Loader /> : <MatchHighlights highlights={data.results} />}
     </>
   );

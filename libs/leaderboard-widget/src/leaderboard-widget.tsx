@@ -8,11 +8,11 @@ export function LeaderboardWidget(props: LeaderboardWidgetProps) {
   const { data, isLoading } = useLeaderboardEntries('1');
   return (
     <>
-      <h1 id="leaderboard-widget" className="font-bold text-lg mb-4">
+      <h2 id="leaderboard-widget" className="font-bold text-lg mb-4">
         <a href="#leaderboard-widget" className="cursor-pointer">
           Leaderboard
         </a>
-      </h1>
+      </h2>
       {isLoading ? <Loader /> : <Leaderboard participants={data.results} />}
     </>
   );

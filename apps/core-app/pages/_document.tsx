@@ -3,8 +3,13 @@ import Script from 'next/script';
 
 export default function Document() {
   return (
-    <Html>
-      <Head />
+    <Html lang="en">
+      <Head>
+        <meta
+          name="description"
+          content="ABC Racing company app, a case study asssignment by Aquib Vadsaria for Publicis Sapient."
+        />
+      </Head>
       <body className="h-screen">
         <Main />
         <NextScript />

@@ -8,7 +8,7 @@ export function FixtureComponent({
   return (
     <div className=" bg-slate-100 dark:bg-slate-800 flex flex-col p-6 grow min-w-fit justify-between">
       <div className="flex flex-col">
-        <span className="text-xl">{championship || title}</span>
+        <h3 className="text-xl">{championship || title}</h3>
         <span className="text-lg">{season}</span>
         <span>{trackName}</span>
       </div>

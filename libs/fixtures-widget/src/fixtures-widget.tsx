@@ -8,11 +8,11 @@ export function FixturesWidget(props: FixturesWidgetProps) {
   const { data, isLoading } = useFixtures();
   return (
     <>
-      <h1 id="fixtures-widget" className="font-bold text-lg mb-4">
+      <h2 id="fixtures-widget" className="font-bold text-lg mb-4">
         <a href="#fixtures-widget" className="cursor-pointer">
           Match Fixtures
         </a>
-      </h1>
+      </h2>
       {isLoading ? <Loader /> : <Fixtures fixtures={data?.results} />}
     </>
   );

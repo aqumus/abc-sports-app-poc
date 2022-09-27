@@ -38,7 +38,7 @@ export function MatchHighlightComponent({
         </div>
       ) : (
         <>
-          <h2 className="text-xl">{title}</h2>
+          <h3 className="text-xl">{title}</h3>
           <span className="text-slate-500 dark:text-slate-400 text-sm mt-4 w-60">
             {description}
           </span>
