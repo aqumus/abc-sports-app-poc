@@ -1,7 +1,10 @@
 # Abc Racing App
 
-This project was generated using [Nx](NX_README.md).
-This project core-app is powered by [Next.js](https://nextjs.org/)
+This project was:
+
+- generated using [Nx](NX_README.md).
+- project core-app is powered by [Next.js](https://nextjs.org/)
+- deployed using [Vercel](https://vercel.com/)
 
 ## Core App
 
@@ -16,6 +19,10 @@ Run `nx build core-app` for building core-app which generates files at `dist/app
 #### Running unit tests
 
 Run `nx test core-app` to execute the unit tests via [Jest](https://jestjs.io).
+
+#### Deployed App
+
+Core app is deployed at https://abc-sports-app.vercel.app/
 
 ## Shared Components
 
@@ -32,3 +39,7 @@ Run `nx build-storybook shared-components` for building shared-components storyb
 #### Running unit tests
 
 Run `nx test shared-components` to execute the unit tests via [Jest](https://jestjs.io).
+
+#### Deployed App
+
+Storybook is deployed at https://abc-racing-app-shared-components.vercel.app/
